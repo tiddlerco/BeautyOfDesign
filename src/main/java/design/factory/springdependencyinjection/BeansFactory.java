@@ -43,6 +43,7 @@ public class BeansFactory {
             // TODO: 此处 Class 的路径是如何计算的
             Class beanClass = Class.forName(beanDefinition.getClassName());
             List<BeanDefinition.ConstructorArg> args = beanDefinition.getConstructorArgs();
+            //构造方法为空直接创建bean
             if (args.isEmpty()) {
                 bean = beanClass.newInstance();
             } else {
@@ -54,10 +55,12 @@ public class BeansFactory {
                         argClasses[i] = arg.getType();
                         argObjects[i] = arg.getArg();
                     } else {
+                        //引用对象的ref是其他bean的id，这里从beanDefinations map中获取
                         BeanDefinition refBeanDefinition = beanDefinations.get(arg.getArg());
                         if (refBeanDefinition == null) {
                             throw new NoSuchBeanDefinitionException("Bean is not defined: " + arg.getArg());
                         }
+                        //递归
                         argObjects[i] = createBean(refBeanDefinition);
                         argClasses[i] = argObjects[i].getClass();
                     }
