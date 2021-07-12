@@ -2,6 +2,7 @@ package countapi.rebuild1.build;
 
 import countapi.rebuild1.build.stroage.MetricsStorage;
 import countapi.rebuild1.entity.RequestInfo;
+import lombok.NoArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -9,6 +10,7 @@ import org.apache.commons.lang3.StringUtils;
  * @Date 2021/6/22 10:23
  */
 //负责提供 API，来采集接口请求的原始数据
+@NoArgsConstructor
 public class MetricsCollector {
     private MetricsStorage metricsStorage;//基于接口而非实现编程
 
