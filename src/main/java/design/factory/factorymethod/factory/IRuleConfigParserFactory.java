@@ -1,6 +1,6 @@
 package design.factory.factorymethod.factory;
 
-import design.factory.ruleconfig.IRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.IRuleConfigParser;
 
 /**
  * 使用多态将简单工厂第一种实现方式的 if 分支逻辑去掉

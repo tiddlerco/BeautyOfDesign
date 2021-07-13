@@ -1,9 +1,9 @@
 package design.factory.factorymethod;
 
-import design.factory.exception.InvalidRuleConfigException;
+import design.factory.common.exception.InvalidRuleConfigException;
 import design.factory.factorymethod.factory.*;
-import design.factory.ruleconfig.IRuleConfigParser;
-import design.factory.ruleconfig.RuleConfig;
+import design.factory.common.ruleconfig.configparser.IRuleConfigParser;
+import design.factory.common.ruleconfig.RuleConfig;
 
 
 /**

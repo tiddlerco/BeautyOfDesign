@@ -1,10 +1,10 @@
 package design.factory.simplefactory;
 
-import design.factory.ruleconfig.IRuleConfigParser;
-import design.factory.ruleconfig.configparser.JsonRuleConfigParser;
-import design.factory.ruleconfig.configparser.PropertiesRuleConfigParser;
-import design.factory.ruleconfig.configparser.XmlRuleConfigParser;
-import design.factory.ruleconfig.configparser.YamlRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.IRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.JsonRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.PropertiesRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.XmlRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.YamlRuleConfigParser;
 
 import java.util.HashMap;
 import java.util.Map;

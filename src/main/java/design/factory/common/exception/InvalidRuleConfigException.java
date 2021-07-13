@@ -1,4 +1,4 @@
-package design.factory.exception;
+package design.factory.common.exception;
 
 /**
  * 对异常重新包装

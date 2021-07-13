@@ -1,4 +1,4 @@
-package design.factory.ruleconfig;
+package design.factory.common.ruleconfig;
 
 /**
  * @Author 喻可

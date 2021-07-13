@@ -1,7 +1,7 @@
 package design.factory.factorymethod.factory;
 
-import design.factory.ruleconfig.IRuleConfigParser;
-import design.factory.ruleconfig.configparser.XmlRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.IRuleConfigParser;
+import design.factory.common.ruleconfig.configparser.XmlRuleConfigParser;
 
 /**
  * @Author 喻可
