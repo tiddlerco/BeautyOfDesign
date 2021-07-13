@@ -1,10 +1,10 @@
-package design.strategy.improve.discountFactory;
+package design.strategy.example1.improve.discountFactory;
 
-import design.strategy.entity.OrderType;
-import design.strategy.improve.discount.DiscountStrategy;
-import design.strategy.improve.discount.discountimpl.GrouponDiscountStrategy;
-import design.strategy.improve.discount.discountimpl.NormalDiscountStrategy;
-import design.strategy.improve.discount.discountimpl.PromotionDiscountStrategy;
+import design.strategy.example1.entity.OrderType;
+import design.strategy.example1.improve.discount.DiscountStrategy;
+import design.strategy.example1.improve.discount.discountimpl.GrouponDiscountStrategy;
+import design.strategy.example1.improve.discount.discountimpl.NormalDiscountStrategy;
+import design.strategy.example1.improve.discount.discountimpl.PromotionDiscountStrategy;
 
 import java.util.HashMap;
 import java.util.Map;

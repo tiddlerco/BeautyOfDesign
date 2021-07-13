@@ -1,7 +1,7 @@
-package design.strategy;
+package design.strategy.example1;
 
-import design.strategy.entity.Order;
-import design.strategy.entity.OrderType;
+import design.strategy.example1.entity.Order;
+import design.strategy.example1.entity.OrderType;
 
 /**
  * 需要改进的地方：对代码进行重构，移除掉分支的判断逻辑

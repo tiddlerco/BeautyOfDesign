@@ -1,7 +1,7 @@
-package design.strategy.improve.discount.discountimpl;
+package design.strategy.example1.improve.discount.discountimpl;
 
-import design.strategy.entity.Order;
-import design.strategy.improve.discount.DiscountStrategy;
+import design.strategy.example1.entity.Order;
+import design.strategy.example1.improve.discount.DiscountStrategy;
 
 /**
  * @Author 喻可

@@ -1,9 +1,9 @@
-package design.strategy.improve;
+package design.strategy.example1.improve;
 
-import design.strategy.entity.Order;
-import design.strategy.entity.OrderType;
-import design.strategy.improve.discount.DiscountStrategy;
-import design.strategy.improve.discountFactory.DiscountStrategyFactory;
+import design.strategy.example1.entity.Order;
+import design.strategy.example1.entity.OrderType;
+import design.strategy.example1.improve.discount.DiscountStrategy;
+import design.strategy.example1.improve.discountFactory.DiscountStrategyFactory;
 
 /**
  * 策略的使用

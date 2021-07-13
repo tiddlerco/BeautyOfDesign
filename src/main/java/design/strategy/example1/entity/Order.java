@@ -1,4 +1,4 @@
-package design.strategy.entity;
+package design.strategy.example1.entity;
 
 import lombok.Data;
 

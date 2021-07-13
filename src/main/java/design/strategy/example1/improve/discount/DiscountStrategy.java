@@ -1,6 +1,6 @@
-package design.strategy.improve.discount;
+package design.strategy.example1.improve.discount;
 
-import design.strategy.entity.Order;
+import design.strategy.example1.entity.Order;
 
 /**
  * 策略的定义
