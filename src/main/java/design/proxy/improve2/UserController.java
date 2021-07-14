@@ -4,7 +4,7 @@ import countapi.rebuild1.entity.UserVo;
 import design.proxy.improve.IUserController;
 
 /**
- * UserControllerImprove 类只负责业务功能
+ * UserController 类只负责业务功能
  *
  * @Author 喻可
  * @Date 2021/7/12 10:40
