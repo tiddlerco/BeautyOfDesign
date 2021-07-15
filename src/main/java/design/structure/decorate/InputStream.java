@@ -5,7 +5,7 @@ import java.io.IOException;
 
 
 /**
- * 原始类
+ * 装饰器类和原始类的父类
  */
 public abstract class InputStream {
 
