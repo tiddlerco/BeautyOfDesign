@@ -68,6 +68,12 @@
             <version>29.0-jre</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.2.5.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
 </project>
