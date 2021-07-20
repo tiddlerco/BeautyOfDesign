@@ -8,6 +8,7 @@ package design.behavior.state.example1;
  */
 
 public class MarioStateMachine {
+
     private int score;
     private State currentState;
 

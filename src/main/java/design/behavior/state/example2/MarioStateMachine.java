@@ -1,7 +1,7 @@
-package design.behavior.state;
+package design.behavior.state.example2;
 
 
-import static design.behavior.state.State.*;
+import static design.behavior.state.example2.State.*;
 
 /**
  * 状态机实现方二：查表法
@@ -11,6 +11,7 @@ import static design.behavior.state.State.*;
  */
 
 public class MarioStateMachine {
+
     private int score;
     private State currentState;
     private static final State[][] transitionTable = {
@@ -49,7 +50,9 @@ public class MarioStateMachine {
     private void executeEvent(Event event) {
         int stateValue = currentState.getValue();
         int eventValue = event.getValue();
+        //当前状态遇到的事件
         this.currentState = transitionTable[stateValue][eventValue];
+        //遇到的事件对应加的分数
         this.score += actionTable[stateValue][eventValue];
     }
 

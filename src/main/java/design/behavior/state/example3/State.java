@@ -1,4 +1,4 @@
-package design.behavior.state;
+package design.behavior.state.example3;
 
 
 public enum State {
