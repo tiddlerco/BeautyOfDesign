@@ -22,6 +22,8 @@ public class SmallMario implements IMario {
         return State.SMALL;
     }
 
+    //这里的stateMachine由MarioStateMachine构造器通过引用传递
+    //所以也对应Demo里new出来的marioStateMachine
     @Override
     public void obtainMushRoom() {
         stateMachine.setCurrentState(new SuperMario(stateMachine));

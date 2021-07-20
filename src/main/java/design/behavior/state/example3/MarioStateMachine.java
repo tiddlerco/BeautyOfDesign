@@ -11,7 +11,7 @@ import design.behavior.state.example3.mariostate.SmallMario;
  * @Date 2021/7/20 10:02
  */
 
-
+// MarioStateMachine是记录状态和分数的。四个Imario的实现类，是来实现变化逻辑的
 public class MarioStateMachine {
 
     private int score;
