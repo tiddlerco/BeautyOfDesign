@@ -1,4 +1,4 @@
-package design.behavior.memento.example;
+package design.behavior.beiwanglu.example;
 
 /**
  * 存在问题：

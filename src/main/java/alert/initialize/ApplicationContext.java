@@ -8,6 +8,11 @@ import alert.handler.ErrorAlertHandler;
 import alert.handler.TimeoutAlertHandler;
 import alert.handler.TpsAlertHandler;
 
+/**
+ * 负责 Alert 的创建、
+ * 组装（alertRule 和 notification 的依赖注入）、
+ * 初始化（添加 handlers）工作
+ */
 public class ApplicationContext {
     private AlertRule alertRule;
     private Notification notification;
@@ -23,6 +28,7 @@ public class ApplicationContext {
         // 改动三：注册handler
         alert.addAlertHandler(new TimeoutAlertHandler(alertRule, notification));
     }
+
     public Alert getAlert() {
         return alert;
     }

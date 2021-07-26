@@ -1,5 +1,8 @@
 package alert;
 
+/**
+ * handler中check方法的入参封装
+ */
 public class ApiStatInfo {
 
     private String api;

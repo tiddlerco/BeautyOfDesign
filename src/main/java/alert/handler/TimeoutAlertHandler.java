@@ -3,7 +3,7 @@ package alert.handler;
 import alert.AlertRule;
 import alert.ApiStatInfo;
 import alert.Notification;
-import alert.NotificationEmergencyLevel;
+import alert.levelenum.NotificationEmergencyLevel;
 
 public class TimeoutAlertHandler extends AlertHandler{
 

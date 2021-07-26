@@ -1,6 +1,6 @@
 package design.structure.bridge;
 
-import alert.NotificationEmergencyLevel;
+import alert.levelenum.NotificationEmergencyLevel;
 
 import java.util.List;
 

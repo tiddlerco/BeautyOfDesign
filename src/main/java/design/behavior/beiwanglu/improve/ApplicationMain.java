@@ -1,4 +1,4 @@
-package design.behavior.memento.improve;
+package design.behavior.beiwanglu.improve;
 
 import java.util.Scanner;
 

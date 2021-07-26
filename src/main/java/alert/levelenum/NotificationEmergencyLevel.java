@@ -1,4 +1,4 @@
-package alert;
+package alert.levelenum;
 
 public enum NotificationEmergencyLevel {
 
