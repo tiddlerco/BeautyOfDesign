@@ -3,15 +3,19 @@ package wallet.fullblood;
 import java.math.BigDecimal;
 
 /**
+ * Domain层 领域模型 可以复用
+ * 不与任何其他层的代码(Repository 层的代码)耦合
+ *
  * @Author 喻可
  * @Date 2021/6/25 18:36
  */
 //将原来在 Service 类中的部分业务逻辑移动到 VirtualWallet 类中，
 // 让 Service 类的实现依赖 VirtualWallet 类
-public class VirtualWallet { // Domain领域模型(充血模型)
+public class VirtualWallet {
 
     private Long id;
-    private Long createTime = System.currentTimeMillis();;
+    private Long createTime = System.currentTimeMillis();
+    ;
     private BigDecimal balance = BigDecimal.ZERO;
 
     public VirtualWallet(Long preAllocatedId) {

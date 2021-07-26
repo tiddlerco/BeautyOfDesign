@@ -13,6 +13,12 @@ import javax.annotation.Resource;
 import java.math.BigDecimal;
 
 /**
+ * 1.Service 类负责与 Repository 交流
+ * 2.Service 类负责跨领域模型的业务聚合功能,
+ * transfer() 转账函数会涉及两个钱包的操作，因此这部分业务逻辑无法放到 VirtualWallet 类中
+ * 3.Service 类负责一些非功能性及与三方系统交互的工作,
+ * 比如幂等、事务、发邮件、发消息、记录日志、调用其他系统的 RPC 接口等，都可以放到 Service 类中。
+ *
  * @Author 喻可
  * @Date 2021/7/26 9:22
  */
