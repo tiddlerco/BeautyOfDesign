@@ -1,4 +1,4 @@
-package wallet.贫血模型;
+package wallet.lackblood;
 
 import lombok.Data;
 

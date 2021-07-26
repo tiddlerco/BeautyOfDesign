@@ -1,4 +1,4 @@
-package wallet.充血模型;
+package wallet.fullblood;
 
 import java.math.BigDecimal;
 

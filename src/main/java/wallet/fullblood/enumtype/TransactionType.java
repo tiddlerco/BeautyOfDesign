@@ -1,4 +1,4 @@
-package wallet.充血模型.enumtype;
+package wallet.fullblood.enumtype;
 
 /**
  * @Author 喻可

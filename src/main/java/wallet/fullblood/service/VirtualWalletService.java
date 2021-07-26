@@ -1,13 +1,13 @@
-package wallet.充血模型.service;
+package wallet.fullblood.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import wallet.充血模型.enumtype.TransactionType;
-import wallet.充血模型.VirtualWallet;
-import wallet.充血模型.entity.VirtualWalletEntity;
-import wallet.充血模型.entity.VirtualWalletTransactionEntity;
-import wallet.充血模型.repository.VirtualWalletRepository;
-import wallet.充血模型.repository.VirtualWalletTransactionRepository;
+import wallet.fullblood.enumtype.TransactionType;
+import wallet.fullblood.VirtualWallet;
+import wallet.fullblood.entity.VirtualWalletEntity;
+import wallet.fullblood.entity.VirtualWalletTransactionEntity;
+import wallet.fullblood.repository.VirtualWalletRepository;
+import wallet.fullblood.repository.VirtualWalletTransactionRepository;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;

@@ -1,7 +1,7 @@
-package wallet.充血模型.repository;
+package wallet.fullblood.repository;
 
 import org.springframework.stereotype.Repository;
-import wallet.充血模型.entity.VirtualWalletTransactionEntity;
+import wallet.fullblood.entity.VirtualWalletTransactionEntity;
 
 /**
  * 虚拟钱包交易记录dao

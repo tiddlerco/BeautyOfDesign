@@ -1,6 +1,4 @@
-package wallet.充血模型;
-
-import org.springframework.transaction.annotation.Transactional;
+package wallet.fullblood;
 
 import java.math.BigDecimal;
 

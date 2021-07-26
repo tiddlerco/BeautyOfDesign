@@ -1,6 +1,6 @@
-package wallet.贫血模型;
+package wallet.lackblood;
 
-import wallet.充血模型.service.VirtualWalletService;
+import wallet.fullblood.service.VirtualWalletService;
 
 import java.math.BigDecimal;
 

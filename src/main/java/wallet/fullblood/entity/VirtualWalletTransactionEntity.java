@@ -1,6 +1,6 @@
-package wallet.充血模型.entity;
+package wallet.fullblood.entity;
 
-import wallet.充血模型.enumtype.TransactionType;
+import wallet.fullblood.enumtype.TransactionType;
 
 import java.math.BigDecimal;
 

@@ -1,7 +1,7 @@
-package wallet.充血模型.repository;
+package wallet.fullblood.repository;
 
 import org.springframework.stereotype.Repository;
-import wallet.充血模型.entity.VirtualWalletEntity;
+import wallet.fullblood.entity.VirtualWalletEntity;
 
 import java.math.BigDecimal;
 

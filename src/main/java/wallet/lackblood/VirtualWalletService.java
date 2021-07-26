@@ -1,11 +1,11 @@
-package wallet.贫血模型;
+package wallet.lackblood;
 
 import org.springframework.transaction.annotation.Transactional;
-import wallet.充血模型.entity.VirtualWalletEntity;
-import wallet.充血模型.entity.VirtualWalletTransactionEntity;
-import wallet.充血模型.enumtype.TransactionType;
-import wallet.充血模型.repository.VirtualWalletRepository;
-import wallet.充血模型.repository.VirtualWalletTransactionRepository;
+import wallet.fullblood.entity.VirtualWalletEntity;
+import wallet.fullblood.entity.VirtualWalletTransactionEntity;
+import wallet.fullblood.enumtype.TransactionType;
+import wallet.fullblood.repository.VirtualWalletRepository;
+import wallet.fullblood.repository.VirtualWalletTransactionRepository;
 
 import java.math.BigDecimal;
 
