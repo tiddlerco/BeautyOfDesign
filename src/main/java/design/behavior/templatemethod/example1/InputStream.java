@@ -8,7 +8,7 @@ import java.io.IOException;
  * @Date 2021/7/19 14:39
  */
 
-public abstract class InputStream implements Closeable {
+public abstract class InputStream {
 
     //把不变的方法放在抽象类中作为模板方法，子类需要重写的方法作为抽象方法
     public int read(byte b[], int off, int len) throws IOException {

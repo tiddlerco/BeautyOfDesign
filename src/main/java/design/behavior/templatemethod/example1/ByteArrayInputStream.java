@@ -14,10 +14,4 @@ public class ByteArrayInputStream extends InputStream {
         return -1;
     }
 
-    @Override
-    public void close() throws IOException {
-
-    }
-
-
 }
