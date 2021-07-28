@@ -1,9 +1,14 @@
 package principle.demeter.original.entity;
 
-import principle.demeter.HtmlDownloader;
+import principle.demeter.original.HtmlDownloader;
 
 /**
  * 表示网页文档，后续的网页内容抽取、分词、索引都是以此为处理对象
+ * 问题：
+ * 1.构造函数中的 downloader.downloadHtml() 逻辑复杂，耗时长，不应该放到构造函数中
+ * 2.HtmlDownloader 对象在构造函数中通过 new 来创建，
+ * 违反了基于接口而非实现编程的设计思想，也会影响到代码的可测试性
+ * 3.从业务含义上来讲，Document 网页文档没必要依赖 HtmlDownloader 类，违背了迪米特法则
  */
 public class Document {
 
@@ -16,5 +21,4 @@ public class Document {
         HtmlDownloader downloader = new HtmlDownloader();
         this.html = downloader.downloadHtml(url);
     }
-    //...
 }

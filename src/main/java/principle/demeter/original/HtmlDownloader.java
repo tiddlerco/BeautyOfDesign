@@ -1,10 +1,11 @@
-package principle.demeter;
+package principle.demeter.original;
 
 import principle.demeter.original.entity.Html;
 import principle.demeter.original.entity.HtmlRequest;
 
 /**
  * 用来通过 URL 获取网页
+ * 这个类的设计没有问题
  */
 public class HtmlDownloader {
 
