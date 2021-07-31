@@ -16,7 +16,7 @@ public class RandomIdGenerator implements IdGenerator {
         try {
             substrOfHostName = getLastFieldOfHostName();
         } catch (UnknownHostException e) {
-            throw new IdGenerationFailureException("...");
+            throw new IdGenerationFailureException("...", e);
         }
         long currentTimeMillis = System.currentTimeMillis();
         String randomString = generateRandomAlphameric(8);
