@@ -21,6 +21,7 @@ public class RandomIdGenerator implements LogTraceIdGenerator {
         return id;
     }
 
+    //这里在出现异常以后程序会继续执行下去，返回值为null
     private String getLastfieldOfHostName() {
         String substrOfHostName = null;
         try {
