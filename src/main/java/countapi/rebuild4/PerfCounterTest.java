@@ -12,6 +12,7 @@ import java.util.List;
 
 public class PerfCounterTest {
     public static void main(String[] args) {
+        //这里只通过无参构造就能完成所有的依赖对象
         ConsoleReporter consoleReporter = new ConsoleReporter();
         consoleReporter.startRepeatedReport(60, 60);
 

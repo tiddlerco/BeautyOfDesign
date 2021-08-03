@@ -9,6 +9,12 @@ import countapi.rebuild3.viewer.ConsoleViewer;
 import countapi.rebuild3.viewer.EmailViewer;
 
 /**
+ * 存在问题：框架用起来还是稍微有些复杂的，需要组装各种类，
+ * 比如需要创建 MetricsStorage 对象、Aggregator 对象、ConsoleViewer 对象，
+ * 然后注入到 ConsoleReporter 中，才能使用 ConsoleReporter
+ * <p>
+ * 在rebuild4中进行解决
+ *
  * @Author 喻可
  * @Date 2021/7/5 15:01
  */
