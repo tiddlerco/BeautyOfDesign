@@ -1,18 +1,21 @@
 package countapi.rebuild2.reporter;
 
-import countapi.rebuild1.build.stroage.MetricsStorage;
 import countapi.rebuild1.entity.RequestInfo;
 import countapi.rebuild1.entity.RequestStat;
 import countapi.rebuild2.Aggregator;
+import countapi.rebuild2.storage.MetricsStorage;
 import countapi.rebuild2.viewer.StatViewer;
 
 import java.util.*;
 
 /**
+ * 上帝类
+ * 负责组装这三个类，
+ * 将获取原始数据、聚合统计、显示
+ * 统计结果到终端这三个阶段的工作串联起来，定时触发执行
  * @Author 喻可
  * @Date 2021/7/5 14:55
  */
-//负责组装这三个类，将获取原始数据、聚合统计、显示统计结果到终端这三个阶段的工作串联起来，定时触发执行
 public class EmailReporter {
     private static final Long DAY_HOURS_IN_SECONDS = 86400L;
 

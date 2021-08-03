@@ -12,6 +12,12 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 存在问题：
+ * 1.ConsoleReporter和EmailReporter 两个类中存在代码重复问题
+ * 2.整个类负责的事情比较多，不相干的逻辑糅合在里面，职责不够单一。
+ * 特别是显示部分的代码可能会比较复杂（比如 Email 的显示方式），
+ * 最好能将这部分显示逻辑剥离出来，设计成一个独立的类
+ *
  * @Author 喻可
  * @Date 2021/6/22 10:27
  */
@@ -41,11 +47,12 @@ public class ConsoleReporter {
                     String apiName = entry.getKey();
                     List<RequestInfo> requestInfosPerApi = entry.getValue();
                     // 第2个代码逻辑：根据原始数据，计算得到统计数据；
-                    //这里也更适合做单元测试
+                    //这里也更适合做单元测试，rebuild2中会把这部分剥离到Aggregator
                     RequestStat requestStat = Aggregator.aggregate(requestInfosPerApi, durationInMillis);
                     stats.put(apiName, requestStat);
                 }
                 // 第3个代码逻辑：将统计数据显示到终端（命令行或邮件）；
+                // rebuild2中会把这部分剥离到ConsoleViewer 类和 EmailViewer类
                 System.out.println("Time Span: [" + startTimeInMillis + ", " + endTimeInMillis + "]");
                 Gson gson = new Gson();
                 System.out.println(gson.toJson(stats));

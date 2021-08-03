@@ -1,9 +1,9 @@
 package countapi.rebuild2.reporter;
 
-import countapi.rebuild1.build.stroage.MetricsStorage;
 import countapi.rebuild1.entity.RequestInfo;
 import countapi.rebuild1.entity.RequestStat;
 import countapi.rebuild2.Aggregator;
+import countapi.rebuild2.storage.MetricsStorage;
 import countapi.rebuild2.viewer.StatViewer;
 
 import java.util.*;
@@ -12,11 +12,15 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
+ * 上帝类
+ * 负责组装这三个类，MetricsStorage，Aggregator，StatViewer
+ * 将获取原始数据、聚合统计、显示统计结果到终端这三个阶段的工作串联起来，定时触发执行
+ * <p>
+ * 存在问题：ConsoleReporter、EmailReporter 类仍然存在代码重复、可测试性差
+ *
  * @Author 喻可
  * @Date 2021/7/5 14:54
  */
-//负责组装这三个类，MetricsStorage，Aggregator，StatViewer
-// 将获取原始数据、聚合统计、显示统计结果到终端这三个阶段的工作串联起来，定时触发执行
 public class ConsoleReporter {
     private MetricsStorage metricsStorage;
     private Aggregator aggregator;

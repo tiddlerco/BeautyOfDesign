@@ -8,10 +8,16 @@ import countapi.rebuild1.entity.RequestStat;
 import java.util.*;
 
 /**
+ * 以一定频率统计并发送统计数据到命令行和邮件
+ * 存在问题：
+ * 1.ConsoleReporter和EmailReporter 两个类中存在代码重复问题
+ * 2.整个类负责的事情比较多，不相干的逻辑糅合在里面，职责不够单一。
+ * 特别是显示部分的代码可能会比较复杂（比如 Email 的显示方式），
+ * 最好能将这部分显示逻辑剥离出来，设计成一个独立的类
+ *
  * @Author 喻可
  * @Date 2021/6/22 11:05
  */
-//以一定频率统计并发送统计数据到命令行和邮件
 public class EmailReporter {
     private static final Long DAY_HOURS_IN_SECONDS = 86400L;
 

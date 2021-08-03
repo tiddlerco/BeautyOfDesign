@@ -1,11 +1,10 @@
 package countapi.rebuild2;
 
-import countapi.rebuild1.build.MetricsCollector;
-import countapi.rebuild1.build.stroage.MetricsStorage;
-import countapi.rebuild1.build.stroage.RedisMetricsStorage;
 import countapi.rebuild1.entity.RequestInfo;
 import countapi.rebuild2.reporter.ConsoleReporter;
 import countapi.rebuild2.reporter.EmailReporter;
+import countapi.rebuild2.storage.MetricsStorage;
+import countapi.rebuild2.storage.RedisMetricsStorage;
 import countapi.rebuild2.viewer.ConsoleViewer;
 import countapi.rebuild2.viewer.EmailViewer;
 
