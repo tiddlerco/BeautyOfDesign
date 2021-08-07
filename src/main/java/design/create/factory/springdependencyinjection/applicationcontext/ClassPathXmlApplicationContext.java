@@ -16,6 +16,7 @@ public class ClassPathXmlApplicationContext implements ApplicationContext{
     public ClassPathXmlApplicationContext(String configLocation) {
         this.beansFactory = new BeansFactory();
         this.beanConfigParser = new XmlBeanConfigParser();
+        //这里如果使用spring注解注入，这个方法上面是不是应该加上@PostConstruct注解
         loadBeanDefinitions(configLocation);
     }
 

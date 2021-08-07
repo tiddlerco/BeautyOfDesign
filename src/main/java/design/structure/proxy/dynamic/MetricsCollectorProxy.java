@@ -23,6 +23,7 @@ public class MetricsCollectorProxy {
 
     public Object createProxy(Object proxiedObject) {
         Class<?>[] interfaces = proxiedObject.getClass().getInterfaces();
+        //DynamicProxyHandler是自己创建的一个handler实现InvocationHandler接口
         DynamicProxyHandler handler = new DynamicProxyHandler(proxiedObject);
         return Proxy.newProxyInstance(proxiedObject.getClass().getClassLoader(), interfaces, handler);
     }
