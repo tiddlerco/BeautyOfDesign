@@ -1,4 +1,6 @@
-package design.structure.bridge.improve;
+package design.structure.bridge.example1.improve;
+
+import design.structure.bridge.example1.improve.senderImpl.MsgSender;
 
 /**
  * 针对 Notification 的代码，我们将不同渠道的发送逻辑剥离出来，形成独立的消息发送类（MsgSender 相关类）

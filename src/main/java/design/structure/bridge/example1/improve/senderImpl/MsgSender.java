@@ -1,4 +1,4 @@
-package design.structure.bridge.improve;
+package design.structure.bridge.example1.improve.senderImpl;
 
 /**
  * @Author 喻可

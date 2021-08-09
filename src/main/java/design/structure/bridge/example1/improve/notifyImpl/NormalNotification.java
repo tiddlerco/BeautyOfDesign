@@ -1,7 +1,7 @@
-package design.structure.bridge.improve.notifyImpl;
+package design.structure.bridge.example1.improve.notifyImpl;
 
-import design.structure.bridge.improve.MsgSender;
-import design.structure.bridge.improve.Notification;
+import design.structure.bridge.example1.improve.senderImpl.MsgSender;
+import design.structure.bridge.example1.improve.Notification;
 
 /**
  * @Author 喻可

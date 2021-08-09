@@ -1,6 +1,4 @@
-package design.structure.bridge.improve.senderImpl;
-
-import design.structure.bridge.improve.MsgSender;
+package design.structure.bridge.example1.improve.senderImpl;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package design.structure.bridge;
+package design.structure.bridge.example1;
 
 import alert.levelenum.NotificationEmergencyLevel;
 
@@ -14,22 +14,22 @@ import java.util.List;
  */
 public class Notification {
 
-    private List emailAddresses;
-    private List telephones;
-    private List wechatIds;
+    private List<String> emailAddresses;
+    private List<String> telephones;
+    private List<String> wechatIds;
 
     public Notification() {
     }
 
-    public void setEmailAddress(List emailAddress) {
+    public void setEmailAddress(List<String> emailAddress) {
         this.emailAddresses = emailAddress;
     }
 
-    public void setTelephones(List telephones) {
+    public void setTelephones(List<String> telephones) {
         this.telephones = telephones;
     }
 
-    public void setWechatIds(List wechatIds) {
+    public void setWechatIds(List<String> wechatIds) {
         this.wechatIds = wechatIds;
     }
 
