@@ -8,7 +8,15 @@ import alert.levelenum.NotificationEmergencyLevel;
 public class Notification {
 
     public void notify(NotificationEmergencyLevel level, String s) {
-        // TODO... 通知逻辑
+        if (level.equals(NotificationEmergencyLevel.SEVERE)) {
+            //...自动语音电话
+        } else if (level.equals(NotificationEmergencyLevel.URGENCY)) {
+            //...发微信
+        } else if (level.equals(NotificationEmergencyLevel.NORMAL)) {
+            //...发邮件
+        } else if (level.equals(NotificationEmergencyLevel.TRIVIAL)) {
+            //...发邮件
+        }
     }
-
 }
+
