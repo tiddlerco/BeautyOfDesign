@@ -1,7 +1,7 @@
-package design.structure.decorate.decorateClass;
+package design.structure.decorate.example1.decorateClass;
 
-import design.structure.decorate.FilterInputStream;
-import design.structure.decorate.InputStream;
+import design.structure.decorate.example1.FilterInputStream;
+import design.structure.decorate.example1.InputStream;
 
 /**
  * 装饰器类是对功能的增强

@@ -1,4 +1,4 @@
-package design.structure.decorate;
+package design.structure.decorate.example1;
 
 
 import java.io.IOException;

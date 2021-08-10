@@ -1,4 +1,4 @@
-package design.structure.decorate.demo;
+package design.structure.decorate.example1.demo;
 
 
 import java.io.*;
