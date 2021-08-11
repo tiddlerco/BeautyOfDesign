@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationEvent;
 
 /**
  * 事件类：定义事件，继承ApplicationEvent的类成为一个事件类
- * 使用泛型便于拓展
+ * 相对于eventclass1使用泛型便于拓展
  *
  * @Author 喻可
  * @Date 2021/7/19 10:33

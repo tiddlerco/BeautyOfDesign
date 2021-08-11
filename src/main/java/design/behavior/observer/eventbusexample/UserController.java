@@ -29,6 +29,7 @@ public class UserController {
 
     public void setRegObservers(List<Object> observers) {
         for (Object observer : observers) {
+            //这里需要注册的观察者是RegPromotionObserver、RegNotificationObserver
             eventBus.register(observer);
         }
     }

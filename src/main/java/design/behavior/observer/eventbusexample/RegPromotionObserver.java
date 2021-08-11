@@ -4,6 +4,8 @@ import com.google.common.eventbus.Subscribe;
 import design.behavior.observer.example.service.PromotionService;
 
 /**
+ * 观察者
+ *
  * @Author 喻可
  * @Date 2021/7/16 16:35
  */
