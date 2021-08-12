@@ -1,4 +1,4 @@
-package functionlearn;
+package java8.functionlearn;
 
 import java.util.function.Function;
 
