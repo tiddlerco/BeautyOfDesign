@@ -8,7 +8,9 @@ public class BClass {
 
     public void process(ICallback callback) {
         //...
+        System.out.println("回调开始");
         callback.methodToCallback();
+        System.out.println("回调结束");
         // ...
     }
 }
