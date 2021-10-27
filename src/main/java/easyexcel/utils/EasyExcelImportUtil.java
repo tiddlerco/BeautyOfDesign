@@ -5,9 +5,9 @@ import com.alibaba.excel.ExcelReader;
 import com.alibaba.excel.metadata.Sheet;
 import com.alibaba.excel.read.listener.ReadListener;
 import com.alibaba.excel.read.metadata.ReadSheet;
-import com.fawkes.yx.smartwork.common.easyexcel.listener.ExcelListener;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import easyexcel.listener.ExcelListener;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedInputStream;
@@ -39,7 +39,7 @@ public class EasyExcelImportUtil {
      * @return
      * @throws IOException
      */
-    public static<T> ExcelListener<T> readExcel(MultipartFile excel, Class<T> tClass,Integer num ) throws IOException {
+    public static<T> ExcelListener<T> readExcel(MultipartFile excel, Class<T> tClass, Integer num ) throws IOException {
         ExcelListener<T> readListener = new ExcelListener<>();
         ExcelReader reader = getReader(excel, readListener, tClass);
         getExcelListener(readListener, reader,num);
