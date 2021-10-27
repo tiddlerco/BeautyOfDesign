@@ -1,4 +1,4 @@
-package wallet.fullblood.repository;
+package wallet.repository;
 
 import org.springframework.stereotype.Repository;
 import wallet.fullblood.entity.VirtualWalletTransactionEntity;

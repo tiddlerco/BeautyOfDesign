@@ -6,8 +6,8 @@ import wallet.fullblood.enumtype.TransactionType;
 import wallet.fullblood.VirtualWallet;
 import wallet.fullblood.entity.VirtualWalletEntity;
 import wallet.fullblood.entity.VirtualWalletTransactionEntity;
-import wallet.fullblood.repository.VirtualWalletRepository;
-import wallet.fullblood.repository.VirtualWalletTransactionRepository;
+import wallet.repository.VirtualWalletRepository;
+import wallet.repository.VirtualWalletTransactionRepository;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
