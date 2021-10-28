@@ -1,6 +1,6 @@
-package design.behavior.pipeline.handler;
+package alidesign.pipeline.handler;
 
-import design.behavior.pipeline.pipeline.InstanceBuildContext;
+import alidesign.pipeline.pipeline.InstanceBuildContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

@@ -1,14 +1,14 @@
-package design.behavior.pipeline.executor;
+package alidesign.pipeline.executor;
 
 /**
  * @Author 喻可
  * @Date 2021/10/27 17:21
  */
 
-import design.behavior.pipeline.handler.CommonHeadHandler;
-import design.behavior.pipeline.handler.CommonTailHandler;
-import design.behavior.pipeline.handler.ContextHandler;
-import design.behavior.pipeline.pipeline.PipelineContext;
+import alidesign.pipeline.handler.CommonHeadHandler;
+import alidesign.pipeline.handler.CommonTailHandler;
+import alidesign.pipeline.handler.ContextHandler;
+import alidesign.pipeline.pipeline.PipelineContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
-package design.behavior.pipeline.application;
+package alidesign.pipeline.application;
 
-import design.behavior.pipeline.executor.PipelineExecutor;
-import design.behavior.pipeline.pipeline.InstanceBuildContext;
+import alidesign.pipeline.executor.PipelineExecutor;
+import alidesign.pipeline.pipeline.InstanceBuildContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

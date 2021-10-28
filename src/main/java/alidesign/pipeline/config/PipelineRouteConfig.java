@@ -1,13 +1,13 @@
-package design.behavior.pipeline.config;
+package alidesign.pipeline.config;
 
 /**
  * @Author 喻可
  * @Date 2021/10/27 17:19
  */
 
-import design.behavior.pipeline.handler.*;
-import design.behavior.pipeline.pipeline.InstanceBuildContext;
-import design.behavior.pipeline.pipeline.PipelineContext;
+import alidesign.pipeline.handler.*;
+import alidesign.pipeline.pipeline.InstanceBuildContext;
+import alidesign.pipeline.pipeline.PipelineContext;
 import lombok.NonNull;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;

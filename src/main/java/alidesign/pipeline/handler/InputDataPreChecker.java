@@ -1,6 +1,6 @@
-package design.behavior.pipeline.handler;
+package alidesign.pipeline.handler;
 
-import design.behavior.pipeline.pipeline.InstanceBuildContext;
+import alidesign.pipeline.pipeline.InstanceBuildContext;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
