@@ -8,7 +8,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * 此配置和AsyncConfig配置重复
+ * 此线程池配置和AsyncConfig配置重复
  * 是否可以只使用AsyncConfig同时实现异步注解和CompletableFuture?
  * CompletableFuture和ThreadPoolExecutor是juc下的
  * ThreadPoolTaskExecutor是spring下的
