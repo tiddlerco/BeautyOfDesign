@@ -9,6 +9,8 @@ public class FormItemRule {
     private String message;
     private Integer min;
     private Integer max;
+    private Integer minimum;
+    private Integer maximum;
 
     public void setRequired(boolean required) {
         this.required = required;
@@ -40,5 +42,21 @@ public class FormItemRule {
 
     public Integer getMax() {
         return max;
+    }
+
+    public void setMinimum(Integer minimum) {
+        this.minimum = minimum;
+    }
+
+    public Integer getMinimum() {
+        return minimum;
+    }
+
+    public void setMaximum(Integer maximum) {
+        this.maximum = maximum;
+    }
+
+    public Integer getMaximum() {
+        return maximum;
     }
 }

@@ -7,5 +7,7 @@ package alidesign.template.entity;
 public enum FormItemTypeEnum {
     TEXT_INPUT,
     TEXT_AREA,
-    DROPDOWN_SELECT, FUZZY_SEARCH;
+    DROPDOWN_SELECT,
+    FUZZY_SEARCH,
+    NUMBER_PICKER;
 }

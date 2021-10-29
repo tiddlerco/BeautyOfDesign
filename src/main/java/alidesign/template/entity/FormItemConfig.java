@@ -15,6 +15,8 @@ public class FormItemConfig {
     private Integer minLength;
     private Integer maxLength;
     private FormItemTypeEnum type;
+    private Integer minNumber;
+    private Integer maxNumber;
 
     public String getCode() {
         return code;
@@ -94,5 +96,21 @@ public class FormItemConfig {
 
     public void setType(FormItemTypeEnum type) {
         this.type = type;
+    }
+
+    public Integer getMinNumber() {
+        return minNumber;
+    }
+
+    public void setMinNumber(Integer minNumber) {
+        this.minNumber = minNumber;
+    }
+
+    public Integer getMaxNumber() {
+        return maxNumber;
+    }
+
+    public void setMaxNumber(Integer maxNumber) {
+        this.maxNumber = maxNumber;
     }
 }
