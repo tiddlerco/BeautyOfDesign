@@ -1,0 +1,34 @@
+package alidesign.strategy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+/**
+ * @title: 模型输入时的提交
+ * @Author yuke
+ * @Date: 2021/10/29 8:10
+ */
+@Component
+public class FormModelSubmitHandler implements FormSubmitHandler<Long> {
+
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+    @Override
+    public String getSubmitType() { return "model"; }
+
+    @Override
+    public CommonPairResponse<String, Long> handleSubmit(FormSubmitRequest request) {
+        logger.info("模型提交：userId={}, formInput={}", request.getUserId(), request.getFormInput());
+
+        // 模型创建成功后获得模型的 id
+        Long modelId = createModel(request);
+
+        return CommonPairResponse.success("模型提交成功！", modelId);
+    }
+
+    private Long createModel(FormSubmitRequest request) {
+        // 创建模型的逻辑
+        return 123L;
+    }
+}
