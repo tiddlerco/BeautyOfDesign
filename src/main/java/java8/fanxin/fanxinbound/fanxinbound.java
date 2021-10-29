@@ -41,5 +41,9 @@ public class fanxinbound {
             dest.set(i, src.get(i));
     }
 
+//    无边界类型通配符（<?>）：
+//    无边界类型通配符（<?>） 等同于 上边界通配符<? extends Object>
+//    因为可以确定父类型是Object，所以可以以Object去获取数据（向上转型）。但是不能写入数据
+
 
 }
