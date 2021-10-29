@@ -1,5 +1,9 @@
-package alidesign.strategy;
+package alidesign.strategy.service;
 
+import alidesign.strategy.handler.FormSubmitHandler;
+import alidesign.strategy.factory.FormSubmitHandlerFactory;
+import alidesign.strategy.entity.CommonPairResponse;
+import alidesign.strategy.entity.FormSubmitRequest;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

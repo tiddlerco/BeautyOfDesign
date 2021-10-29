@@ -1,5 +1,8 @@
-package alidesign.strategy;
+package alidesign.strategy.handler;
 
+import alidesign.strategy.entity.CommonPairResponse;
+import alidesign.strategy.entity.FormSubmitRequest;
+import alidesign.strategy.handler.FormSubmitHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

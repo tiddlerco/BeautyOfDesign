@@ -1,4 +1,4 @@
-package alidesign.strategy;
+package alidesign.strategy.entity;
 
 /**
  * @title: FormSubmitRequest
@@ -6,6 +6,8 @@ package alidesign.strategy;
  * @Date: 2021/10/29 8:04
  */
 
+
+import alidesign.strategy.handler.FormSubmitHandler;
 
 import java.util.Map;
 

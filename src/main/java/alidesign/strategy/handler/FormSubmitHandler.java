@@ -1,10 +1,13 @@
-package alidesign.strategy;
+package alidesign.strategy.handler;
 
 /**
  * @title: FormSubmitHandler
  * @Author yuke
  * @Date: 2021/10/29 8:03
  */
+
+import alidesign.strategy.entity.CommonPairResponse;
+import alidesign.strategy.entity.FormSubmitRequest;
 
 import java.io.Serializable;
 

@@ -1,7 +1,4 @@
-package alidesign.strategy;
-
-
-import java.io.Serializable;
+package alidesign.strategy.entity;
 
 /**
  * @title: CommonPairResponse

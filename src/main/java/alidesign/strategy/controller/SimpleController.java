@@ -1,5 +1,8 @@
-package alidesign.strategy;
+package alidesign.strategy.controller;
 
+import alidesign.strategy.entity.CommonPairResponse;
+import alidesign.strategy.entity.FormSubmitRequest;
+import alidesign.strategy.service.FormServiceImpl;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;

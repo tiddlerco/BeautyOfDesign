@@ -1,5 +1,6 @@
-package alidesign.strategy;
+package alidesign.strategy.factory;
 
+import alidesign.strategy.handler.FormSubmitHandler;
 import lombok.NonNull;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
