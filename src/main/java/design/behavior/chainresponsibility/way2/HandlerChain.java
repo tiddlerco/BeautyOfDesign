@@ -14,7 +14,8 @@ import java.util.List;
 public class HandlerChain {
 
     private List<IHandler> handlers = new ArrayList<>();
-
+    //之前迷惑这里的handler是怎么注入到spring容器的
+    //参考FormItemConverterFactory里的set注入方式  2021/11/2
     public void addHandler(IHandler handler) {
         this.handlers.add(handler);
     }
