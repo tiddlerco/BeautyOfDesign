@@ -1,5 +1,6 @@
 package work;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -9,7 +10,14 @@ import java.time.format.DateTimeFormatter;
  */
 public class Learn {
 
-    public void localDateTimeUse(){
+    //当前时间转字符串
+    public void localDateTimeUse() {
         LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+    }
+
+    //double转string去除末尾的0
+    private String convertDoubleToString(double val) {
+        BigDecimal bd = new BigDecimal(String.valueOf(val));
+        return bd.stripTrailingZeros().toPlainString();
     }
 }
