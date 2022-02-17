@@ -7,4 +7,8 @@ public class Html {
 
     private Byte[] rawHtml;
 
+    public void save(){
+
+    }
+
 }
