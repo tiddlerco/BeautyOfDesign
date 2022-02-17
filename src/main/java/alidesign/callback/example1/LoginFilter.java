@@ -1,4 +1,4 @@
-package alidesign.callback;
+package alidesign.callback.example1;
 
 import work.SpringContextUtil;
 

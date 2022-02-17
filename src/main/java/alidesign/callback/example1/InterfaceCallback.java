@@ -1,4 +1,4 @@
-package alidesign.callback;
+package alidesign.callback.example1;
 
 /**
  * 用于ctw-web解耦的
