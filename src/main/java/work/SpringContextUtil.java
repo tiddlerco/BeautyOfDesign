@@ -6,6 +6,9 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 /**
+ * 在抽象类中无法使用@Resource将类注入容器,
+ * 需要使用Spring上下文获取容器中的对象,调用相关的方法
+ *
  * @Author 喻可
  * @Date 2021/12/28 9:30
  */
@@ -63,6 +66,7 @@ public class SpringContextUtil implements ApplicationContextAware {
 
     /**
      * 获取对象
+     *
      * @param requiredType
      * @param <T>
      * @return
