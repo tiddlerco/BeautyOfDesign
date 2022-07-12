@@ -62,7 +62,7 @@ public class PipelineExecutor {
         Objects.requireNonNull(context, "上下文数据不能为 null");
         // 拿到数据类型
         Class<? extends PipelineContext> dataType = context.getClass();
-        // 获取数据处理管道
+        // 获取数据处理管道 (关于为什么是super,这个是pipelineRouteMap.get(dataType)自动生成的,不要再纠结了)
         List<? extends ContextHandler<? super PipelineContext>> pipeline = pipelineRouteMap.get(dataType);
 
         if (CollectionUtils.isEmpty(pipeline)) {
