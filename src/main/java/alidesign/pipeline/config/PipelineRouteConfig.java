@@ -62,6 +62,7 @@ public class PipelineRouteConfig implements ApplicationContextAware {
         return PIPELINE_ROUTE_MAP.entrySet()
                 .stream()
                 .collect(Collectors.toMap(Map.Entry::getKey, this::toPipeline));
+                //等价于.collect(Collectors.toMap(item->item.getKey(), item->toPipeline(item)));
     }
 
     /**
