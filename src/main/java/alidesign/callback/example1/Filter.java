@@ -7,7 +7,7 @@ public class Filter {
 
     private InterfaceCallback callback;
 
-    //interce在spring中通过set注入
+    //interface在spring中通过set注入
     public void setCallback(InterfaceCallback callback) {
         this.callback = callback;
     }
