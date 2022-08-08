@@ -2,11 +2,13 @@ package alidesign.pipeline.application;
 
 import alidesign.pipeline.executor.PipelineExecutor;
 import alidesign.pipeline.pipeline.InstanceBuildContext;
+import alidesign.pipeline.pipeline.PipelineContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.Resource;
 import java.util.concurrent.ExecutionException;
+import java.util.function.BiConsumer;
 
 /**
  * @Author 喻可
@@ -24,7 +26,12 @@ public class ModelServiceImpl {
     public boolean buildModelInstance(InstanceBuildRequest request) throws ExecutionException, InterruptedException {
         InstanceBuildContext data = createPipelineData(request);
         //异步获取
-        boolean success = pipelineExecutor.acceptAsync(data,null);
+        boolean success = pipelineExecutor.acceptAsync(data, new BiConsumer<PipelineContext, Boolean>() {
+            @Override
+            public void accept(PipelineContext pipelineContext, Boolean aBoolean) {
+                //回调的操作逻辑
+            }
+        });
 
         // 创建模型实例成功
         if (success) {
