@@ -11,6 +11,11 @@ import java.util.Random;
  */
 public class RedPackageAlgorithm {
 
+    /**
+     * 抢红包先把红包根据算法计算出来放入到redis的list集合中，使用信号量控制并发，抢到以后从集合中弹出一个中奖金额
+     * @param redPackage
+     * @return
+     */
     public static double getRandomMoney(RedPackage redPackage) {
         // remainSize 剩余的红包数量
         // remainMoney 剩余的钱
