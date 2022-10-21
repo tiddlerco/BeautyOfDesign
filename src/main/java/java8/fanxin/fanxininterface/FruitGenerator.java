@@ -29,7 +29,9 @@ public class FruitGenerator<T> implements Generator<T> {
     public static void main(String[] args) {
         Generic<Integer> gInteger = new Generic<>(123);
         Generic<Number> gNumber = new Generic<>(456);
-        //showKeyValue(gInteger); 编译会报错
+        //编译会报错,泛型确定以后只能传入相应的类型，不能传入其子类
+        //通配符作为参数使用的前提是有泛型,例如Generic是泛型类
+        //showKeyValue(gInteger);
         showKeyValueWithCommon(gInteger);
     }
 
